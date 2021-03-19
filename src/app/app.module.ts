@@ -12,6 +12,8 @@ import {ShowcaseComponent} from './showcase/showcase.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {SideNavComponent} from './side-nav/side-nav.component';
 import {MatListModule} from '@angular/material/list';
+import {PhotosComponent} from './photos/photos.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import {MatListModule} from '@angular/material/list';
     ToolbarComponent,
     ShowcaseComponent,
     SideNavComponent,
+    PhotosComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
