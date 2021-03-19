@@ -31,6 +31,7 @@
   top: 25%;
   left: 5%;
   text-transform: uppercase;
+  color: var(--dark-text-color)
 }
 
 @media (min-width: 1200px) {

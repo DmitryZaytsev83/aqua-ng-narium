@@ -1,1 +1,4 @@
-
+mat-drawer {
+  background-color: var(--dark-bg);
+  color: var(--dark-text-color);
+}
