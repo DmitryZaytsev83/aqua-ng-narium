@@ -9,12 +9,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +24,7 @@ import { ShowcaseComponent } from './showcase/showcase.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
