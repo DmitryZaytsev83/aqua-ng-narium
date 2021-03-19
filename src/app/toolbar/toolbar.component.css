@@ -1,0 +1,11 @@
+mat-toolbar {
+  background: transparent;
+  backdrop-filter: blur(4px);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px var(--glass-shadow);
+  text-shadow: 2px 2px 2px var(--glass-shadow);
+}
+
+mat-icon {
+  color: white;
+}
