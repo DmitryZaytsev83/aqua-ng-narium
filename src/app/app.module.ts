@@ -14,6 +14,7 @@ import {SideNavComponent} from './side-nav/side-nav.component';
 import {MatListModule} from '@angular/material/list';
 import {PhotosComponent} from './photos/photos.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ShowcaseComponent,
     SideNavComponent,
     PhotosComponent,
+    VideosComponent,
   ],
   imports: [
     BrowserModule,
