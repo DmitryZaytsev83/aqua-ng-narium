@@ -4,7 +4,8 @@
   --glass-shadow: rgba(0, 128, 255, 0.2);
   --glass-red: red;
   --light-bg: white;
-  --dark-bg: #191970;
+  /*--dark-bg: #191970;*/
+  --dark-bg: linear-gradient(#008dd2, lightseagreen, #008dd2);
   --light-text-color: midnightblue;
   --dark-text-color: gainsboro;
   --accent-color: cornflowerblue;
@@ -18,6 +19,6 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: var(--dark-bg);
+  background: var(--dark-bg);
   color: var(--dark-text-color);
 }
