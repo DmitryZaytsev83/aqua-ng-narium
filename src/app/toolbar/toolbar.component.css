@@ -18,6 +18,10 @@ mat-icon {
   color: white;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .page-title {
   margin: auto 1rem;
   color: var(--dark-text-color);

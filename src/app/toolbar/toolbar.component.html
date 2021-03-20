@@ -4,8 +4,8 @@
           aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <img src="assets/aquanarium-logo.svg" style="height:55px"
-       alt="лого">
+  <img class="logo" src="assets/aquanarium-logo.svg" style="height:55px"
+       alt="лого" (click)="goHome()">
   <span class="spacer"></span>
   <h2 class="page-title">{{getPage()}}</h2>
   <span class="spacer2"></span>

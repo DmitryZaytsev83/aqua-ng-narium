@@ -33,4 +33,8 @@ export class ToolbarComponent implements OnInit {
         return 'Страница';
     }
   }
+
+  goHome(): void {
+    this.router.navigateByUrl('/');
+  }
 }
