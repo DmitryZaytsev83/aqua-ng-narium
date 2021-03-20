@@ -6,3 +6,10 @@
   background-color: var(--dark-bg);
   color: var(--dark-text-color);
 }
+
+.container {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
