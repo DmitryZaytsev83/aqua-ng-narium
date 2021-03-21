@@ -15,7 +15,8 @@ export class ToolbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleMenu(): void {
+  toggleMenu($event: MouseEvent): void {
+    $event.preventDefault();
     this.toggleDrawer.emit();
   }
 
