@@ -4,8 +4,7 @@
   --glass-shadow: rgba(0, 128, 255, 0.2);
   --glass-red: red;
   --light-bg: white;
-  /*--dark-bg: #191970;*/
-  --dark-bg: linear-gradient(#008dd2, lightseagreen, #008dd2);
+  --dark-bg: #191970;
   --light-text-color: midnightblue;
   --dark-text-color: gainsboro;
   --accent-color: cornflowerblue;
