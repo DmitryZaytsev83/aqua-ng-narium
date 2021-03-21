@@ -16,6 +16,8 @@ import {PhotosComponent} from './photos/photos.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {VideosComponent} from './videos/videos.component';
 import {MatCardModule} from '@angular/material/card';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import {MatCardModule} from '@angular/material/card';
     SideNavComponent,
     PhotosComponent,
     VideosComponent,
+    JumbotronComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,

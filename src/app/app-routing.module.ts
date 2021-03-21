@@ -1,14 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ShowcaseComponent} from './showcase/showcase.component';
 import {PhotosComponent} from './photos/photos.component';
 import {VideosComponent} from './videos/videos.component';
+import {LandingComponent} from './landing/landing.component';
 
 const routes: Routes = [
-  {path: '', component: ShowcaseComponent},
+  {path: '', component: LandingComponent},
   {path: 'фото', component: PhotosComponent},
   {path: 'видео', component: VideosComponent},
-  {path: 'экскурсии', component: ShowcaseComponent},
+  {path: 'экскурсии', component: LandingComponent},
 ];
 
 @NgModule({
