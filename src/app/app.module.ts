@@ -16,8 +16,9 @@ import {PhotosComponent} from './photos/photos.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {VideosComponent} from './videos/videos.component';
 import {MatCardModule} from '@angular/material/card';
-import { JumbotronComponent } from './jumbotron/jumbotron.component';
-import { LandingComponent } from './landing/landing.component';
+import {JumbotronComponent} from './jumbotron/jumbotron.component';
+import {LandingComponent} from './landing/landing.component';
+import {ScheduleComponent} from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LandingComponent } from './landing/landing.component';
     VideosComponent,
     JumbotronComponent,
     LandingComponent,
+    ScheduleComponent,
   ],
   imports: [
     BrowserModule,
