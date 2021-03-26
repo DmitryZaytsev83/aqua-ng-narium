@@ -1,0 +1,18 @@
+:host {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-tint);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px var(--glass-shadow);
+  text-shadow: 2px 2px 2px var(--glass-shadow);
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 1.0rem;
+}
