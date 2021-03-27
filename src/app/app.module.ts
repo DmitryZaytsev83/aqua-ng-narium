@@ -19,6 +19,7 @@ import {MatCardModule} from '@angular/material/card';
 import {JumbotronComponent} from './jumbotron/jumbotron.component';
 import {LandingComponent} from './landing/landing.component';
 import {ScheduleComponent} from './schedule/schedule.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {ScheduleComponent} from './schedule/schedule.component';
     JumbotronComponent,
     LandingComponent,
     ScheduleComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

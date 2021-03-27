@@ -3,6 +3,10 @@ mat-drawer {
   color: var(--dark-text-color);
 }
 
+.mat-drawer-container {
+  color: var(--dark-text-color);
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
