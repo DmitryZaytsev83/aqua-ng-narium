@@ -10,7 +10,6 @@ mat-toolbar {
   background: transparent;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--glass-tint);
-  border-radius: 5px;
   box-shadow: 0 0 5px 1px var(--glass-shadow);
   text-shadow: 2px 2px 2px var(--glass-shadow);
   color: var(--dark-text-color);
@@ -27,28 +26,4 @@ mat-icon {
 .page-title {
   margin: auto 1rem;
   color: var(--dark-text-color);
-}
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-.spacer2 {
-  flex: 1 1 auto;
-}
-
-.address {
-  display: block;
-  margin: 0 1rem;
-}
-
-.tel {
-  margin: 0;
-  color: var(--dark-text-color);
-}
-
-@media (max-width: 730px) {
-  .page-title, .address, .tel {
-    display: none;
-  }
 }
