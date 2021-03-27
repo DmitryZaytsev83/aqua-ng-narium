@@ -12,6 +12,14 @@ import {ShowcaseComponent} from './showcase/showcase.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {SideNavComponent} from './side-nav/side-nav.component';
 import {MatListModule} from '@angular/material/list';
+import {PhotosComponent} from './photos/photos.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {VideosComponent} from './videos/videos.component';
+import {MatCardModule} from '@angular/material/card';
+import {JumbotronComponent} from './jumbotron/jumbotron.component';
+import {LandingComponent} from './landing/landing.component';
+import {ScheduleComponent} from './schedule/schedule.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +27,12 @@ import {MatListModule} from '@angular/material/list';
     ToolbarComponent,
     ShowcaseComponent,
     SideNavComponent,
+    PhotosComponent,
+    VideosComponent,
+    JumbotronComponent,
+    LandingComponent,
+    ScheduleComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +42,9 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

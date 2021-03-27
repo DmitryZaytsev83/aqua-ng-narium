@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 0;
+  background: var(--dark-bg);
+  color: var(--dark-text-color);
+}
+
+.img {
+  width: auto;
+  height: 100%;
+}

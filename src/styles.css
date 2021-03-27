@@ -18,6 +18,47 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: var(--dark-bg);
+  background: var(--dark-bg);
   color: var(--dark-text-color);
+}
+
+h1, .mat-h1, .mat-headline, .mat-typography h1 {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  h1, .mat-h1, .mat-headline, .mat-typography h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, .mat-h1, .mat-headline, .mat-typography h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1, .mat-h1, .mat-headline, .mat-typography h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
 }

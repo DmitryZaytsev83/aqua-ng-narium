@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 5rem;
+  background: var(--dark-bg);
+  color: var(--dark-text-color);
+}
+
+.container {
+  width: 90%;
+  margin: 1rem auto;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  max-width: 560px;
+}
+
+.card {
+  max-width: 400px;
+  background: transparent;
+  margin: 2rem auto;
+  color: var(--dark-text-color);
+}
