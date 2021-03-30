@@ -20,6 +20,8 @@ import {JumbotronComponent} from './jumbotron/jumbotron.component';
 import {LandingComponent} from './landing/landing.component';
 import {ScheduleComponent} from './schedule/schedule.component';
 import { FooterComponent } from './footer/footer.component';
+import { AngularYandexMapsModule } from 'angular8-yandex-maps';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     LandingComponent,
     ScheduleComponent,
     FooterComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { FooterComponent } from './footer/footer.component';
     MatSidenavModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    AngularYandexMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
