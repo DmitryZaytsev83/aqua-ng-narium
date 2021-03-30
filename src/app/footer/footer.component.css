@@ -7,7 +7,7 @@
 }
 
 mat-toolbar {
-  background: transparent;
+  background: rgba(0, 0, 0, .3);
   backdrop-filter: blur(10px);
   border-top: 1px solid var(--glass-tint);
   box-shadow: 0 0 5px 1px var(--glass-shadow);
@@ -31,6 +31,12 @@ p, a {
   margin: 0;
   text-decoration: none;
   color: var(--dark-text-color);
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 svg {
