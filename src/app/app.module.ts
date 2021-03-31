@@ -22,6 +22,7 @@ import {ScheduleComponent} from './schedule/schedule.component';
 import { FooterComponent } from './footer/footer.component';
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 import { MapComponent } from './map/map.component';
+import { CostComponent } from './cost/cost.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MapComponent } from './map/map.component';
     ScheduleComponent,
     FooterComponent,
     MapComponent,
+    CostComponent,
   ],
   imports: [
     BrowserModule,
