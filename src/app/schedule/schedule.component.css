@@ -58,9 +58,13 @@ th:nth-child(6) {
   width: 10%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   section {
     font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 }
 
@@ -73,6 +77,10 @@ th:nth-child(6) {
     writing-mode: vertical-lr;
     text-orientation: upright;
   }
+
+  h2 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -83,6 +91,10 @@ th:nth-child(6) {
   .turtle {
     writing-mode: vertical-lr;
     text-orientation: upright;
+  }
+
+  h2 {
+    font-size: 1.6rem;
   }
 }
 
