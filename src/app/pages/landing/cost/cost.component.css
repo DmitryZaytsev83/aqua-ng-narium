@@ -1,5 +1,5 @@
 section {
-  background: url("../../assets/backgrounds/coral_color_water.png") no-repeat center center/cover midnightblue;
+  background: url("../../../../assets/backgrounds/coral_color_water.png") no-repeat center center/cover midnightblue;
   padding: 3rem 0;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -18,7 +18,7 @@ h2 {
 }
 
 table {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   background: transparent;
   border-collapse: collapse;
@@ -97,4 +97,3 @@ th:nth-child(6) {
     font-size: 1.6rem;
   }
 }
-
