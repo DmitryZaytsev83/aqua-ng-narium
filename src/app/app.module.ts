@@ -23,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 import { MapComponent } from './map/map.component';
 import { CostComponent } from './cost/cost.component';
+import { ExcursionBriefComponent } from './excursion-brief/excursion-brief.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CostComponent } from './cost/cost.component';
     FooterComponent,
     MapComponent,
     CostComponent,
+    ExcursionBriefComponent,
   ],
   imports: [
     BrowserModule,
