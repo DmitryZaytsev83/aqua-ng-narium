@@ -1,5 +1,32 @@
+section {
+  background: url("../../assets/backgrounds/coral_color_water.png") no-repeat center center/cover midnightblue;
+  padding: 5rem 0;
+}
+
 .container {
   width: 90%;
   max-width: 960px;
-  margin: 5rem auto;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: .7rem;
+  }
 }

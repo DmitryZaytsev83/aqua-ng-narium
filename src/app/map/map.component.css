@@ -1,10 +1,47 @@
 section {
-  background: url("../../assets/backgrounds/coral_color_glass.png") no-repeat center center/cover midnightblue;
+  background: url("../../assets/backgrounds/coral_color_water.png") no-repeat center center/cover midnightblue;
   padding: 3rem 0;
 }
 
+.text-container {
+  width: 90%;
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
 .container {
   width: 90%;
-  height: 500px;
+  height: 800px;
   margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    height: 500px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 400px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    height: 350px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
 }
