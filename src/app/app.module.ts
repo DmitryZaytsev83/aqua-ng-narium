@@ -7,22 +7,23 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import {ToolbarComponent} from './toolbar/toolbar.component';
-import {ShowcaseComponent} from './showcase/showcase.component';
+import {ToolbarComponent} from './layouts/toolbar/toolbar.component';
+import {ShowcaseComponent} from './pages/landing/showcase/showcase.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import {SideNavComponent} from './side-nav/side-nav.component';
+import {SideNavComponent} from './layouts/side-nav/side-nav.component';
 import {MatListModule} from '@angular/material/list';
-import {PhotosComponent} from './photos/photos.component';
+import {PhotosComponent} from './pages/photos/photos.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-import {VideosComponent} from './videos/videos.component';
+import {VideosComponent} from './pages/videos/videos.component';
 import {MatCardModule} from '@angular/material/card';
-import {JumbotronComponent} from './jumbotron/jumbotron.component';
-import {LandingComponent} from './landing/landing.component';
-import {ScheduleComponent} from './schedule/schedule.component';
-import { FooterComponent } from './footer/footer.component';
+import {JumbotronComponent} from './pages/landing/jumbotron/jumbotron.component';
+import {LandingComponent} from './pages/landing/landing.component';
+import {ScheduleComponent} from './pages/landing/schedule/schedule.component';
+import { FooterComponent } from './layouts/footer/footer.component';
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
-import { MapComponent } from './map/map.component';
-import { CostComponent } from './cost/cost.component';
+import { MapComponent } from './pages/landing/map/map.component';
+import { CostComponent } from './pages/landing/cost/cost.component';
+import { ExcursionBriefComponent } from './pages/landing/excursion-brief/excursion-brief.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CostComponent } from './cost/cost.component';
     FooterComponent,
     MapComponent,
     CostComponent,
+    ExcursionBriefComponent,
   ],
   imports: [
     BrowserModule,
