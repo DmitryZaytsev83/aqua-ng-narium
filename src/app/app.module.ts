@@ -23,7 +23,8 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 import { MapComponent } from './pages/landing/map/map.component';
 import { CostComponent } from './pages/landing/cost/cost.component';
-import { ExcursionBriefComponent } from './pages/landing/excursion-brief/excursion-brief.component';
+import { ExcursionBriefComponent } from './components/excursion-brief/excursion-brief.component';
+import { ExcursionsComponent } from './pages/excursions/excursions.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ExcursionBriefComponent } from './pages/landing/excursion-brief/excursi
     MapComponent,
     CostComponent,
     ExcursionBriefComponent,
+    ExcursionsComponent,
   ],
   imports: [
     BrowserModule,
