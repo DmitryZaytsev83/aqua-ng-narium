@@ -9,6 +9,7 @@
   --dark-text-color: gainsboro;
   --accent-color: cornflowerblue;
   --neutral-gray: #707070;
+  --table-border-color: white;
 }
 
 html, body {
@@ -22,8 +23,29 @@ body {
   color: var(--dark-text-color);
 }
 
+.content-container {
+  width: 90%;
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+section {
+  /*background: url("assets/backgrounds/coral_color_water.png") no-repeat center center/cover midnightblue;*/
+  background: rgba(25, 25, 112, 0.7);
+  padding: 5rem 0;
+  margin: 10rem 0;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: var(--dark-text-color);
+}
+
 h1, .mat-h1, .mat-headline, .mat-typography h1 {
   font-size: 4rem;
+  line-height: 1.5;
+}
+
+h2, .mat-h2, .mat-title, .mat-typography h2 {
+  font-size: 3rem;
   line-height: 1.5;
 }
 
@@ -32,14 +54,40 @@ p {
   line-height: 1.5;
 }
 
-@media (max-width: 800px) {
+table {
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  border-collapse: collapse;
+  border: 1px solid var(--table-border-color);
+}
+
+td, th {
+  color: var(--dark-text-color);
+  border: 1px solid var(--table-border-color);
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 1100px) {
   h1, .mat-h1, .mat-headline, .mat-typography h1 {
     font-size: 3rem;
+  }
+
+  h2, .mat-h2, .mat-title, .mat-typography h2 {
+    font-size: 2rem;
   }
 
   p {
     font-size: 1.2rem;
     line-height: 1.4;
+  }
+
+  section {
+    font-size: 1.2rem;
   }
 }
 
@@ -48,8 +96,16 @@ p {
     font-size: 2.5rem;
   }
 
+  h2, .mat-h2, .mat-title, .mat-typography h2 {
+    font-size: 1.8rem;
+  }
+
   p {
     font-size: 1.1rem;
+  }
+
+  section {
+    font-size: .8rem;
   }
 }
 
@@ -58,7 +114,15 @@ p {
     font-size: 2rem;
   }
 
+  h2, .mat-h2, .mat-title, .mat-typography h2 {
+    font-size: 1.6rem;
+  }
+
   p {
     font-size: 1.1rem;
+  }
+
+  section {
+    font-size: .7rem;
   }
 }

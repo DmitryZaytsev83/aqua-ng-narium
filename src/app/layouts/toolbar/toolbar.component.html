@@ -3,7 +3,8 @@
           (click)="toggleMenu($event); $event.stopPropagation()"
           aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
+    <span class="pageName">{{getPage()}}</span>
   </button>
-  <img class="logo" src="../../../assets/aquanarium-logo.svg" style="height:55px"
+  <img class="logo" src="../../../assets/aquanarium-logo.svg"
        alt="лого" (click)="goHome()">
 </mat-toolbar>

@@ -21,9 +21,23 @@ mat-icon {
 
 .logo {
   cursor: pointer;
+  margin: auto;
+  height: 55px;
 }
 
-.page-title {
-  margin: auto 1rem;
-  color: var(--dark-text-color);
+.example-icon {
+  position: relative;
+}
+
+.pageName {
+  position: absolute;
+  left: 125%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 450px) {
+  .pageName {
+    display: none;
+  }
 }
