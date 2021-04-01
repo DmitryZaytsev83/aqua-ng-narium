@@ -25,6 +25,7 @@ import { MapComponent } from './pages/landing/map/map.component';
 import { CostComponent } from './pages/landing/cost/cost.component';
 import { ExcursionBriefComponent } from './components/excursion-brief/excursion-brief.component';
 import { ExcursionsComponent } from './pages/excursions/excursions.component';
+import { EventsComponent } from './pages/events/events.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ExcursionsComponent } from './pages/excursions/excursions.component';
     CostComponent,
     ExcursionBriefComponent,
     ExcursionsComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,
