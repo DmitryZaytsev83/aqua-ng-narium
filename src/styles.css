@@ -30,8 +30,12 @@ body {
 section {
   /*background: url("assets/backgrounds/coral_color_water.png") no-repeat center center/cover midnightblue;*/
   background: rgba(25, 25, 112, 0.8);
+  width: 95%;
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
+  margin: 4rem auto;
   padding: 4rem 0;
+  border-radius: 4px;
   /*margin: 1rem 0;*/
   font-size: 1.3rem;
   line-height: 1.7;
