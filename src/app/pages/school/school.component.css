@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 4rem 0;
+}
+
+section {
+  background: rgba(55, 125, 255, 0.7);
+}
+
+fieldset {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form {
+  flex-grow: 1;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+input.ng-valid.ng-touched {
+  border: 1px solid lime;
+}
+
+small {
+  color: yellow;
+}

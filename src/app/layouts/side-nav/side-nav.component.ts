@@ -13,6 +13,7 @@ export class SideNavComponent implements OnInit {
     {path: '/видео', name: 'Видео'},
     {path: '/экскурсии', name: 'Экскурсии'},
     {path: '/мероприятия', name: 'Мероприятия'},
+    {path: '/школа', name: 'Школа'},
   ];
 
   constructor() {

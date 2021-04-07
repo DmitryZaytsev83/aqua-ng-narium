@@ -19,13 +19,15 @@ import {MatCardModule} from '@angular/material/card';
 import {JumbotronComponent} from './pages/landing/jumbotron/jumbotron.component';
 import {LandingComponent} from './pages/landing/landing.component';
 import {ScheduleComponent} from './pages/landing/schedule/schedule.component';
-import { FooterComponent } from './layouts/footer/footer.component';
-import { AngularYandexMapsModule } from 'angular8-yandex-maps';
-import { MapComponent } from './pages/landing/map/map.component';
-import { CostComponent } from './pages/landing/cost/cost.component';
-import { ExcursionBriefComponent } from './components/excursion-brief/excursion-brief.component';
-import { ExcursionsComponent } from './pages/excursions/excursions.component';
-import { EventsComponent } from './pages/events/events.component';
+import {FooterComponent} from './layouts/footer/footer.component';
+import {AngularYandexMapsModule} from 'angular8-yandex-maps';
+import {MapComponent} from './pages/landing/map/map.component';
+import {CostComponent} from './pages/landing/cost/cost.component';
+import {ExcursionBriefComponent} from './components/excursion-brief/excursion-brief.component';
+import {ExcursionsComponent} from './pages/excursions/excursions.component';
+import {EventsComponent} from './pages/events/events.component';
+import {SchoolComponent} from './pages/school/school.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { EventsComponent } from './pages/events/events.component';
     ExcursionBriefComponent,
     ExcursionsComponent,
     EventsComponent,
+    SchoolComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { EventsComponent } from './pages/events/events.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    AngularYandexMapsModule
+    AngularYandexMapsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

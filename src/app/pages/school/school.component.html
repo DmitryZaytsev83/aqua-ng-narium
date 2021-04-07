@@ -1,0 +1,48 @@
+<section>
+  <div class="content-container">
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+      <h3>Заявка</h3>
+<!--      {{form.get('name')?.errors | json}}-->
+      <div class="form-control">
+        <fieldset>
+          <legend>Имя</legend>
+          <input class="input-form" type="text" placeholder="Имя"
+                 formControlName="name">
+          <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
+               class="validation">
+            <small *ngIf="form.get('name')?.errors?.required">
+              Поле "Имя" не может быть пустым
+            </small>
+            <small *ngIf="form.get('name')?.errors?.minlength">
+              Поле "Имя" не может быть меньше
+              {{form.get('name')?.errors?.minlength.requiredLength}}
+              символов. Сейчас количество символов
+              {{form.get('name')?.errors?.minlength.actualLength}}.
+            </small>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-control">
+        <fieldset>
+          <legend>Фамилия</legend>
+          <input type="text" placeholder="Фамилия" formControlName="surname">
+          <div
+            *ngIf="form.get('surname')?.invalid
+             && form.get('surname')?.touched"
+            class="validation">
+            <small *ngIf="form.get('surname')?.errors?.required">
+              Поле "Фамилия" не может быть пустым
+            </small>
+            <small *ngIf="form.get('surname')?.errors?.minlength">
+              Поле "Фамилия" не может быть меньше
+              {{form.get('surname')?.errors?.minlength.requiredLength}}
+              символов. Сейчас количество символов
+              {{form.get('surname')?.errors?.minlength.actualLength}}.
+            </small>
+          </div>
+        </fieldset>
+      </div>
+      <button type="submit" [disabled]="form.invalid">Отправить</button>
+    </form>
+  </div>
+</section>
