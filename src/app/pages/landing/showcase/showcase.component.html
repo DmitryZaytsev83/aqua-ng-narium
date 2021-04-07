@@ -1,6 +1,7 @@
 <div class="showcase">
   <video class="video" src="../../../../assets/video/showcase1.mp4"
-         muted loop autoplay></video>
+         muted loop autoplay oncanplay="this.play()"
+         onloadedmetadata="this.muted = true"></video>
   <div class="overlay"></div>
   <div class="text">
     <h2>Не&nbsp;останавливайтесь</h2>
