@@ -2,47 +2,116 @@
   <div class="content-container">
     <form [formGroup]="form" (ngSubmit)="submitForm()">
       <h3>Заявка</h3>
-<!--      {{form.get('name')?.errors | json}}-->
       <div class="form-control">
         <fieldset>
-          <legend>Имя</legend>
-          <input class="input-form" type="text" placeholder="Имя"
-                 formControlName="name">
-          <div *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
-               class="validation">
-            <small *ngIf="form.get('name')?.errors?.required">
+          <legend>ФИО ученика</legend>
+          <input class="input-form" type="text"
+                 placeholder="Фамилия Имя Отчество"
+                 formControlName="studentFIO">
+          <div
+            *ngIf="form.get('studentFIO')?.invalid && form.get('studentFIO')?.touched"
+            class="validation">
+            <small *ngIf="form.get('studentFIO')?.errors?.required">
               Поле "Имя" не может быть пустым
             </small>
-            <small *ngIf="form.get('name')?.errors?.minlength">
+            <small *ngIf="form.get('studentFIO')?.errors?.minlength">
               Поле "Имя" не может быть меньше
-              {{form.get('name')?.errors?.minlength.requiredLength}}
+              {{form.get('studentFIO')?.errors?.minlength.requiredLength}}
               символов. Сейчас количество символов
-              {{form.get('name')?.errors?.minlength.actualLength}}.
+              {{form.get('studentFIO')?.errors?.minlength.actualLength}}.
             </small>
           </div>
         </fieldset>
       </div>
       <div class="form-control">
         <fieldset>
-          <legend>Фамилия</legend>
-          <input type="text" placeholder="Фамилия" formControlName="surname">
+          <legend>Дата рождения</legend>
+          <input class="input-form" type="date" formControlName="birthdate">
           <div
-            *ngIf="form.get('surname')?.invalid
-             && form.get('surname')?.touched"
+            *ngIf="form.get('birthdate')?.invalid
+             && form.get('birthdate')?.touched"
             class="validation">
-            <small *ngIf="form.get('surname')?.errors?.required">
-              Поле "Фамилия" не может быть пустым
-            </small>
-            <small *ngIf="form.get('surname')?.errors?.minlength">
-              Поле "Фамилия" не может быть меньше
-              {{form.get('surname')?.errors?.minlength.requiredLength}}
-              символов. Сейчас количество символов
-              {{form.get('surname')?.errors?.minlength.actualLength}}.
+            <small *ngIf="form.get('birthdate')?.errors?.required">
+              Поле "Дата рождения" должно быть заполнено
             </small>
           </div>
         </fieldset>
       </div>
-      <button type="submit" [disabled]="form.invalid">Отправить</button>
+      <div class="form-control">
+        <fieldset>
+          <legend>ФИО одного из родителей</legend>
+          <input class="input-form" type="text" placeholder="Фамилия Имя Отчество"
+                 formControlName="parentFIO">
+          <div
+            *ngIf="form.get('parentFIO')?.invalid
+             && form.get('parentFIO')?.touched"
+            class="validation">
+            <small *ngIf="form.get('parentFIO')?.errors?.required">
+              Поле "Фамилия" не может быть пустым
+            </small>
+            <small *ngIf="form.get('parentFIO')?.errors?.minlength">
+              Поле "Фамилия" не может быть меньше
+              {{form.get('parentFIO')?.errors?.minlength.requiredLength}}
+              символов. Сейчас количество символов
+              {{form.get('parentFIO')?.errors?.minlength.actualLength}}.
+            </small>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-control">
+        <fieldset>
+          <legend>Номер телефона одного из родителей</legend>
+          <input class="input-form" type="tel"
+                 placeholder="9-999-999-99-99"
+                 formControlName="phoneNumber">
+          <div
+            *ngIf="form.get('phoneNumber')?.invalid
+             && form.get('phoneNumber')?.touched"
+            class="validation">
+            <small *ngIf="form.get('phoneNumber')?.errors?.required">
+              Поле "Телефон" не может быть пустым
+            </small>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-control">
+        <fieldset>
+          <legend>Адрес проживания</legend>
+          <input class="input-form" type="text" placeholder="ул.Уличная, д.1, к.1, кв.1"
+                 formControlName="address">
+          <div
+            *ngIf="form.get('address')?.invalid
+             && form.get('address')?.touched"
+            class="validation">
+            <small *ngIf="form.get('address')?.errors?.required">
+              Поле "Фамилия" не может быть пустым
+            </small>
+            <small *ngIf="form.get('address')?.errors?.minlength">
+              Поле "Адрес" не может быть меньше
+              {{form.get('address')?.errors?.minlength.requiredLength}}
+              символов. Сейчас количество символов
+              {{form.get('address')?.errors?.minlength.actualLength}}.
+            </small>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-control">
+        <fieldset>
+          <legend>Номер школы, где учится ребенок</legend>
+          <input class="input-form" type="text" placeholder="99" formControlName="schoolNumber">
+          <div
+            *ngIf="form.get('schoolNumber')?.invalid
+             && form.get('schoolNumber')?.touched"
+            class="validation">
+            <small *ngIf="form.get('schoolNumber')?.errors?.required">
+              Поле "Номер школы" не может быть пустым
+            </small>
+          </div>
+        </fieldset>
+      </div>
+      <button class="button-form" type="submit"
+              [disabled]="form.invalid">Отправить
+      </button>
     </form>
   </div>
 </section>

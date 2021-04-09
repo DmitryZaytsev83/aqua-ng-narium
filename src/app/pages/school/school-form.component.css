@@ -7,17 +7,25 @@
 }
 
 section {
-  background: rgba(55, 125, 255, 0.7);
+  /*background: rgba(55, 125, 255, 0.7);*/
 }
 
 fieldset {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  margin: 1rem auto;
 }
 
 .input-form {
   flex-grow: 1;
+  padding: 1rem;
+}
+
+.button-form {
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin: 1rem auto;
 }
 
 input.ng-invalid.ng-touched {

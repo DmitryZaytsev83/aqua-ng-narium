@@ -15,13 +15,26 @@ export class SchoolFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = new FormGroup({
-      name: new FormControl('', [
+      studentFIO: new FormControl('', [
         Validators.minLength(3),
         Validators.required
       ]),
-      surname: new FormControl('', [
+      parentFIO: new FormControl('', [
         Validators.minLength(3),
         Validators.required,
+      ]),
+      birthdate: new FormControl('', [
+        Validators.required,
+      ]),
+      phoneNumber: new FormControl('', [
+        Validators.required,
+      ]),
+      address: new FormControl('', [
+        Validators.required,
+        Validators.minLength(10),
+      ]),
+      schoolNumber: new FormControl('', [
+        Validators.required
       ]),
     });
   }
