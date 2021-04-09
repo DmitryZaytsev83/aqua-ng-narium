@@ -1,15 +1,16 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {SchoolFormService} from '../../services/school-form.service';
 
 @Component({
   selector: 'app-school',
-  templateUrl: './school.component.html',
-  styleUrls: ['./school.component.css'],
+  templateUrl: './school-form.component.html',
+  styleUrls: ['./school-form.component.css'],
 })
-export class SchoolComponent implements OnInit {
+export class SchoolFormComponent implements OnInit {
   form!: FormGroup;
 
-  constructor() {
+  constructor(public schoolFormService: SchoolFormService) {
   }
 
   ngOnInit(): void {
@@ -28,6 +29,9 @@ export class SchoolComponent implements OnInit {
   submitForm(): void {
     const formData = {...this.form.value};
     console.log(formData);
+    this.schoolFormService.sendFormData(formData).subscribe(response => {
+      console.log(response);
+    });
     this.form.reset();
   }
 }

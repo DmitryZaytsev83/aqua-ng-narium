@@ -26,8 +26,9 @@ import {CostComponent} from './pages/landing/cost/cost.component';
 import {ExcursionBriefComponent} from './components/excursion-brief/excursion-brief.component';
 import {ExcursionsComponent} from './pages/excursions/excursions.component';
 import {EventsComponent} from './pages/events/events.component';
-import {SchoolComponent} from './pages/school/school.component';
+import {SchoolFormComponent} from './pages/school/school-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     ExcursionBriefComponent,
     ExcursionsComponent,
     EventsComponent,
-    SchoolComponent,
+    SchoolFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +62,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatCardModule,
     AngularYandexMapsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
