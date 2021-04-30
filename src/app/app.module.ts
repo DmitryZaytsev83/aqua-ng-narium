@@ -29,6 +29,7 @@ import {EventsComponent} from './pages/events/events.component';
 import {SchoolFormComponent} from './pages/school/school-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { LectoriumComponent } from './pages/landing/lectorium/lectorium.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {HttpClientModule} from '@angular/common/http';
     ExcursionsComponent,
     EventsComponent,
     SchoolFormComponent,
+    LectoriumComponent,
   ],
   imports: [
     BrowserModule,

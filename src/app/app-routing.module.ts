@@ -13,11 +13,14 @@ const routes: Routes = [
   {path: 'видео', component: VideosComponent},
   {path: 'экскурсии', component: ExcursionsComponent},
   {path: 'мероприятия', component: EventsComponent},
-  {path: 'школа', component: SchoolFormComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 0]
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
