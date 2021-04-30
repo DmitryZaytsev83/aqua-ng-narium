@@ -30,6 +30,10 @@ export class ToolbarComponent implements OnInit {
         return 'Видео';
       case '/экскурсии':
         return 'Экскурсии';
+      case '/мероприятия':
+        return 'Мероприятия';
+      case '/школа':
+        return 'Школа';
       default:
         return 'Страница';
     }

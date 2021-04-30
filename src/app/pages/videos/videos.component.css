@@ -1,9 +1,10 @@
 :host {
   display: block;
+  box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
-  padding-top: 5rem;
-  color: var(--dark-text-color);
+  padding: 5rem 0;
+  background-color: rgba(25, 25, 112, 0.8);
 }
 
 .video {
@@ -12,7 +13,7 @@
 
 .card {
   max-width: 400px;
-  background: transparent;
+  background: rgba(25, 25, 112, 0.8);
   margin: 2rem auto;
   color: var(--dark-text-color);
 }
