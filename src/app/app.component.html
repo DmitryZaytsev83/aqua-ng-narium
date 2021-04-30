@@ -3,7 +3,7 @@
     <app-side-nav (closeDrawer)="drawer.close()"></app-side-nav>
   </mat-drawer>
   <div class="example-sidenav-content">
-    <div class="wrapper">
+    <div class="wrapper" #contentArea>
       <app-toolbar (toggleDrawer)="drawer.toggle()"></app-toolbar>
       <router-outlet></router-outlet>
       <app-footer></app-footer>

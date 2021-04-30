@@ -5,6 +5,7 @@ import {VideosComponent} from './pages/videos/videos.component';
 import {LandingComponent} from './pages/landing/landing.component';
 import {ExcursionsComponent} from './pages/excursions/excursions.component';
 import {EventsComponent} from './pages/events/events.component';
+import {SchoolFormComponent} from './pages/school/school-form.component';
 
 const routes: Routes = [
   {path: '', component: LandingComponent},
@@ -15,7 +16,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 0]
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
