@@ -56,16 +56,10 @@ export class AppComponent implements OnInit {
       )
       .subscribe(({trigger, positions, idToRestore}) => {
         if (trigger === 'imperative') {
-          console.log('imperative');
-          console.log(positions);
-          console.log(idToRestore);
           this.contentArea.nativeElement.scrollTop = 0;
         }
 
         if (trigger === 'popstate') {
-          console.log('popstate');
-          console.log(positions);
-          console.log(idToRestore);
           this.contentArea.nativeElement.scrollTop = positions[idToRestore];
         }
       });

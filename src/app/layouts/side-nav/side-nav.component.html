@@ -2,3 +2,11 @@
   <a mat-list-item *ngFor="let link of links"
      [routerLink]="link.path" (click)="closeMenu()">{{link.name}}</a>
 </mat-nav-list>
+<div class="divider"></div>
+<mat-nav-list>
+  <a mat-list-item *ngFor="let link of socialLinks"
+     [href]="link.path" target="_blank" (click)="closeMenu()">
+    <img class="social-icon" src="{{link.icon}}" alt="{{link.alt}}">
+  </a>
+</mat-nav-list>
+
