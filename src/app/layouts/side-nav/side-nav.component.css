@@ -6,7 +6,7 @@
 }
 
 a[mat-list-item] {
-  color: var(--dark-text-color);
+  color: var(--light-text-color);
   transition: 300ms;
 }
 

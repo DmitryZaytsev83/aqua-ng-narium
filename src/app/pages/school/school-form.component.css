@@ -6,10 +6,6 @@
   padding: 4rem 0;
 }
 
-section {
-  /*background: rgba(55, 125, 255, 0.7);*/
-}
-
 fieldset {
   border-radius: 4px;
   display: flex;
