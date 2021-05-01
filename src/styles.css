@@ -155,4 +155,8 @@ td, th {
   p, a {
     font-size: 1.3rem;
   }
+
+  ul {
+    padding-inline-start: 1rem;
+  }
 }
