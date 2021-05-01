@@ -1,6 +1,7 @@
 <mat-nav-list>
   <a mat-list-item *ngFor="let link of links"
      [routerLink]="link.path" (click)="closeMenu()">{{link.name}}</a>
+  <a mat-list-item [routerLink]="'/'" (click)="showContacts()">Контакты</a>
 </mat-nav-list>
 <div class="divider"></div>
 <mat-nav-list>

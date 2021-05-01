@@ -1,4 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {LinksService} from '../../services/links.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-side-nav',
@@ -21,13 +23,19 @@ export class SideNavComponent implements OnInit {
     {path: 'https://www.ok.ru/aquanarium', icon: '/assets/icons/odnoklassniki.svg', alt: 'ok'}
   ];
 
-  constructor() {
+  constructor(private linksService: LinksService, private router: Router) {
   }
 
   ngOnInit(): void {
   }
 
   closeMenu(): void {
+    this.closeDrawer.emit();
+  }
+
+  showContacts(): void {
+    this.linksService.setContactsClick(true);
+    this.router.navigateByUrl('/');
     this.closeDrawer.emit();
   }
 }
