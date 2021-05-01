@@ -5,3 +5,7 @@
   box-sizing: border-box;
   padding: 4rem 0;
 }
+
+.cost {
+  color: yellow;
+}

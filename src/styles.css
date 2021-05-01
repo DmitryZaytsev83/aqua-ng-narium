@@ -2,13 +2,9 @@
 :root {
   --glass-tint: rgba(0, 128, 255, 0.02);
   --glass-shadow: rgba(0, 128, 255, 0.2);
-  --glass-red: red;
-  --light-bg: white;
   --dark-bg: #191970;
-  --light-text-color: midnightblue;
-  --dark-text-color: gainsboro;
-  --accent-color: cornflowerblue;
-  --neutral-gray: #707070;
+  --light-text-color: gainsboro;
+  --accent-color: yellow;
   --table-border-color: white;
 }
 
@@ -18,7 +14,6 @@ html, body {
 
 body {
   margin: 0;
-  /*font-family: Roboto, "Helvetica Neue", sans-serif;*/
 }
 
 .content-container {
@@ -28,7 +23,6 @@ body {
 }
 
 section {
-  /*background: url("assets/backgrounds/coral_color_water.png") no-repeat center center/cover midnightblue;*/
   background: rgba(25, 25, 112, 0.8);
   width: 95%;
   -webkit-backdrop-filter: blur(15px);
@@ -36,10 +30,9 @@ section {
   margin: 4rem auto;
   padding: 4rem 0;
   border-radius: 4px;
-  /*margin: 1rem 0;*/
   font-size: 1.3rem;
   line-height: 1.7;
-  color: var(--dark-text-color);
+  color: var(--light-text-color);
 }
 
 h1, .mat-h1, .mat-headline, .mat-typography h1 {
@@ -62,7 +55,7 @@ h4, .mat-h4, .mat-typography h4 {
   line-height: 1.2;
 }
 
-p {
+p, a {
   font-size: 1.3rem;
   line-height: 1.5;
 }
@@ -76,13 +69,17 @@ table {
 }
 
 td, th {
-  color: var(--dark-text-color);
+  color: var(--light-text-color);
   border: 1px solid var(--table-border-color);
 }
 
 .table th, .table td {
   text-align: center;
   vertical-align: middle;
+}
+
+.phone-number {
+  color: var(--accent-color);
 }
 
 @media (max-width: 1100px) {
@@ -102,7 +99,7 @@ td, th {
     font-size: 1.7rem;
   }
 
-  p {
+  p, a {
     font-size: 1.2rem;
     line-height: 1.4;
   }
@@ -129,12 +126,12 @@ td, th {
     font-size: 1.6rem;
   }
 
-  p {
+  p, a {
     font-size: 1.1rem;
   }
 
   section {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }
 
@@ -155,11 +152,7 @@ td, th {
     font-size: 1.4rem;
   }
 
-  p {
-    font-size: 1.1rem;
-  }
-
-  section {
-    font-size: .7rem;
+  p, a {
+    font-size: 1.3rem;
   }
 }

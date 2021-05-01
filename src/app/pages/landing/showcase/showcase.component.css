@@ -17,7 +17,7 @@
   top: 25%;
   left: 5%;
   text-transform: uppercase;
-  color: var(--dark-text-color);
+  /*color: var(--dark-text-color);*/
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 

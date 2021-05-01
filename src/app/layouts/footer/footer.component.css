@@ -12,7 +12,7 @@ mat-toolbar {
   border-top: 1px solid var(--glass-tint);
   box-shadow: 0 0 5px 1px var(--glass-shadow);
   text-shadow: 2px 2px 2px var(--glass-shadow);
-  color: var(--dark-text-color);
+  color: var(--light-text-color);
 }
 
 .spacer {
@@ -30,7 +30,7 @@ p, a {
   display: block;
   margin: 0;
   text-decoration: none;
-  color: var(--dark-text-color);
+  color: var(--light-text-color);
 }
 
 .vertical-center {

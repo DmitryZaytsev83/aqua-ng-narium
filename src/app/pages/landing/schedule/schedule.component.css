@@ -2,6 +2,11 @@ table {
   width: 90%;
 }
 
+.lead {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+}
+
 th:first-child {
   width: 20%;
 }
@@ -30,5 +35,9 @@ th:nth-child(6) {
   .turtle {
     writing-mode: vertical-lr;
     text-orientation: upright;
+  }
+
+  section {
+    font-size: .7rem;
   }
 }
