@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import {SchoolProgramService} from '../../services/school-program.service';
+import {LinksService} from '../../services/links.service';
 
 @Component({
   selector: 'app-excursions',
@@ -9,15 +9,15 @@ import {SchoolProgramService} from '../../services/school-program.service';
 export class ExcursionsComponent implements OnInit, AfterViewInit {
   @ViewChild('target') target!: ElementRef;
 
-  constructor(private schoolProgram: SchoolProgramService) {
+  constructor(private linksService: LinksService) {
   }
 
   ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
-    if (this.schoolProgram.getButtonClick()) {
-      this.schoolProgram.setButtonClick(false);
+    if (this.linksService.getExcursionClick()) {
+      this.linksService.setExcursionClick(false);
       setTimeout(() => this.target.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 50);
     }
   }
