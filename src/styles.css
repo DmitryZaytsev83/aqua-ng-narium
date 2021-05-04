@@ -78,6 +78,16 @@ td, th {
   vertical-align: middle;
 }
 
+.tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  margin: 0 .5rem 0 0;
+}
+
 .phone-number {
   color: var(--accent-color);
 }
