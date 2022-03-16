@@ -6,19 +6,12 @@ import {LinksService} from '../../services/links.service';
   templateUrl: './excursions.component.html',
   styleUrls: ['./excursions.component.css']
 })
-export class ExcursionsComponent implements OnInit, AfterViewInit {
+export class ExcursionsComponent implements OnInit {
   @ViewChild('target') target!: ElementRef;
 
   constructor(private linksService: LinksService) {
   }
 
   ngOnInit(): void {
-  }
-
-  ngAfterViewInit(): void {
-    if (this.linksService.getExcursionClick()) {
-      this.linksService.setExcursionClick(false);
-      setTimeout(() => this.target.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 50);
-    }
   }
 }
