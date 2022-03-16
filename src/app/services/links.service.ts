@@ -4,18 +4,9 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class LinksService {
-  private excursionButton = false;
   private contactsButton = false;
 
   constructor() {
-  }
-
-  getExcursionClick(): boolean {
-    return this.excursionButton;
-  }
-
-  setExcursionClick(value: boolean): void {
-    this.excursionButton = value;
   }
 
   getContactsClick(): boolean {

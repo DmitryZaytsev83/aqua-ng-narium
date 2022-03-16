@@ -30,6 +30,7 @@ import {SchoolFormComponent} from './pages/school/school-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { LectoriumComponent } from './pages/landing/lectorium/lectorium.component';
+import { SchoolExcursionsComponent } from './pages/school-excursions/school-excursions.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { LectoriumComponent } from './pages/landing/lectorium/lectorium.componen
     EventsComponent,
     SchoolFormComponent,
     LectoriumComponent,
+    SchoolExcursionsComponent,
   ],
   imports: [
     BrowserModule,

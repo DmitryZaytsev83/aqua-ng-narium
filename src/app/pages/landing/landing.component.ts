@@ -22,9 +22,4 @@ export class LandingComponent implements OnInit, DoCheck {
       setTimeout(() => this.target.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 400);
     }
   }
-
-  goToExcursionPage(): void {
-    this.schoolService.setExcursionClick(true);
-    this.router.navigateByUrl('/экскурсии');
-  }
 }
