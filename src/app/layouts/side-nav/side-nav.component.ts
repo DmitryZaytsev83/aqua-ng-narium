@@ -14,6 +14,7 @@ export class SideNavComponent implements OnInit {
     {path: '/фото', name: 'Фото'},
     {path: '/видео', name: 'Видео'},
     {path: '/экскурсии', name: 'Экскурсии'},
+    {path: '/школы', name: 'Экскурсии для школ'},
     {path: '/мероприятия', name: 'Мероприятия'},
   ];
   socialLinks = [

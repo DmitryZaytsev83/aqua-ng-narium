@@ -5,12 +5,14 @@ import {VideosComponent} from './pages/videos/videos.component';
 import {LandingComponent} from './pages/landing/landing.component';
 import {ExcursionsComponent} from './pages/excursions/excursions.component';
 import {EventsComponent} from './pages/events/events.component';
+import {SchoolExcursionsComponent} from './pages/school-excursions/school-excursions.component';
 
 const routes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'фото', component: PhotosComponent},
   {path: 'видео', component: VideosComponent},
   {path: 'экскурсии', component: ExcursionsComponent},
+  {path: 'школы', component: SchoolExcursionsComponent},
   {path: 'мероприятия', component: EventsComponent},
 ];
 
