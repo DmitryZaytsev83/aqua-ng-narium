@@ -19,7 +19,15 @@ export class LandingComponent implements OnInit, DoCheck {
   ngDoCheck(): void {
     if (this.schoolService.getContactsClick()) {
       this.schoolService.setContactsClick(false);
-      setTimeout(() => this.target.nativeElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 400);
+      setTimeout(() => this.target.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      }), 400);
     }
+  }
+
+  toSchoolPage(): void {
+    this.router.navigateByUrl('/школы').then(r => null);
   }
 }
