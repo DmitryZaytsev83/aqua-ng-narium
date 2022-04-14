@@ -19,8 +19,8 @@ export class SideNavComponent implements OnInit {
   ];
   socialLinks = [
     {path: 'https://vk.com/aquanarium', icon: '/assets/icons/vk.svg', alt: 'vk'},
-    {path: 'https://www.instagram.com/aquanarium/', icon: '/assets/icons/instagram.svg', alt: 'ins'},
-    {path: 'https://www.facebook.com/groups/aquanarium/', icon: '/assets/icons/facebook.svg', alt: 'fb'},
+    // {path: 'https://www.instagram.com/aquanarium/', icon: '/assets/icons/instagram.svg', alt: 'ins'},
+    // {path: 'https://www.facebook.com/groups/aquanarium/', icon: '/assets/icons/facebook.svg', alt: 'fb'},
     {path: 'https://www.ok.ru/aquanarium', icon: '/assets/icons/odnoklassniki.svg', alt: 'ok'}
   ];
 
