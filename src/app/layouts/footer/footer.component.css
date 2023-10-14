@@ -1,60 +1,69 @@
 :host {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 mat-toolbar {
-  background: rgba(25, 25, 112, 0.8);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid var(--glass-tint);
-  box-shadow: 0 0 5px 1px var(--glass-shadow);
-  text-shadow: 2px 2px 2px var(--glass-shadow);
-  color: var(--light-text-color);
+    background: rgba(25, 25, 112, 0.8);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--glass-tint);
+    box-shadow: 0 0 5px 1px var(--glass-shadow);
+    text-shadow: 2px 2px 2px var(--glass-shadow);
+    color: var(--light-text-color);
 }
 
 .spacer {
-  flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.spacer.center {
+    display: none;
 }
 
 .tel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p, a {
-  font-size: 1rem;
-  display: block;
-  margin: 0;
-  text-decoration: none;
-  color: var(--light-text-color);
+    font-size: 1rem;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: var(--light-text-color);
 }
 
 .vertical-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 svg {
-  margin: 0 .5rem;
+    margin: 0 .5rem;
 }
 
-@media (max-width: 400px) {
-  p, a {
-    font-size: .7rem;
-  }
+@media (max-width: 575px) {
+    p, a {
+        font-size: .7rem;
+    }
 
-  svg {
-    width: 16px;
-    height: 16px;
-    margin: 0 .1rem;
-  }
+    svg {
+        width: 16px;
+        height: 16px;
+        margin: 0 .1rem;
+    }
 
-  .tel:last-child {
-    display: none;
-  }
+    .tel:last-child {
+        display: none;
+    }
+
+    .spacer.center {
+        display: flex;
+    }
 }
