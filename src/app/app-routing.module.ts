@@ -5,6 +5,7 @@ import {VideosComponent} from './pages/videos/videos.component';
 import {LandingComponent} from './pages/landing/landing.component';
 import {ExcursionsComponent} from './pages/excursions/excursions.component';
 import {EventsComponent} from './pages/events/events.component';
+import {VacanciesComponent} from './pages/vacancies/vacancies.component';
 import {SchoolExcursionsComponent} from './pages/school-excursions/school-excursions.component';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'экскурсии', component: ExcursionsComponent},
   {path: 'школы', component: SchoolExcursionsComponent},
   {path: 'мероприятия', component: EventsComponent},
+  {path: 'вакансии', component: VacanciesComponent},
 ];
 
 @NgModule({

@@ -16,6 +16,7 @@ export class SideNavComponent implements OnInit {
     {path: '/экскурсии', name: 'Экскурсии'},
     {path: '/школы', name: 'Экскурсии для школ'},
     {path: '/мероприятия', name: 'Мероприятия'},
+    {path: '/вакансии', name: 'Вакансии'},
   ];
   socialLinks = [
     {path: 'https://vk.com/aquanarium', icon: '/assets/icons/vk.svg', alt: 'vk'},

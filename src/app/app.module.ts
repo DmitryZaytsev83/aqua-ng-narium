@@ -29,47 +29,49 @@ import {EventsComponent} from './pages/events/events.component';
 import {SchoolFormComponent} from './pages/school/school-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { LectoriumComponent } from './pages/landing/lectorium/lectorium.component';
-import { SchoolExcursionsComponent } from './pages/school-excursions/school-excursions.component';
+import {LectoriumComponent} from './pages/landing/lectorium/lectorium.component';
+import {SchoolExcursionsComponent} from './pages/school-excursions/school-excursions.component';
+import {VacanciesComponent} from './pages/vacancies/vacancies.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ToolbarComponent,
-    ShowcaseComponent,
-    SideNavComponent,
-    PhotosComponent,
-    VideosComponent,
-    JumbotronComponent,
-    LandingComponent,
-    ScheduleComponent,
-    FooterComponent,
-    MapComponent,
-    CostComponent,
-    ExcursionBriefComponent,
-    ExcursionsComponent,
-    EventsComponent,
-    SchoolFormComponent,
-    LectoriumComponent,
-    SchoolExcursionsComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
-    MatGridListModule,
-    MatCardModule,
-    AngularYandexMapsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ToolbarComponent,
+        ShowcaseComponent,
+        SideNavComponent,
+        PhotosComponent,
+        VideosComponent,
+        JumbotronComponent,
+        LandingComponent,
+        ScheduleComponent,
+        FooterComponent,
+        MapComponent,
+        CostComponent,
+        ExcursionBriefComponent,
+        ExcursionsComponent,
+        EventsComponent,
+        SchoolFormComponent,
+        LectoriumComponent,
+        SchoolExcursionsComponent,
+        VacanciesComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatListModule,
+        MatGridListModule,
+        MatCardModule,
+        AngularYandexMapsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
 })
 export class AppModule {
 }

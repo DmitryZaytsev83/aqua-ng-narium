@@ -90,6 +90,7 @@ svg {
 
 .phone-number {
   color: var(--accent-color);
+  white-space: nowrap;
 }
 
 @media (max-width: 1100px) {
