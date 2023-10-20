@@ -1,0 +1,24 @@
+:host {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 4rem 0;
+}
+
+.anchor {
+    height: 4rem;
+}
+
+@media (max-width: 400px) {
+    .table {
+        font-size: 0.8rem;
+    }
+}
+
+p, a {
+    font-size: 1rem;
+    margin: 0;
+    text-decoration: none;
+    color: var(--light-text-color);
+}
